@@ -51,8 +51,10 @@ function App()
       ...allTodos[index],
       completedOn:completedOn
     }
+    
 
     let updatedCompletedArr=[...completedTodos];
+    
     updatedCompletedArr.push(filteredItem);
     setCompletedTodos(updatedCompletedArr);
     handleDeleteTodo(index);
